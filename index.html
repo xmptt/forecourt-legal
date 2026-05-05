@@ -16,6 +16,7 @@
     }
     h1 { font-size: 28px; font-weight: 700; margin-bottom: 4px; }
     h2 { font-size: 18px; font-weight: 600; margin-top: 40px; margin-bottom: 8px; }
+    h3 { font-size: 16px; font-weight: 600; margin-top: 24px; margin-bottom: 6px; }
     p, li { color: #333; }
     ul { padding-left: 20px; }
     li { margin-bottom: 6px; }
@@ -28,7 +29,7 @@
 <body>
 
   <h1>Privacy Policy</h1>
-  <p class="meta">Forecourt &mdash; Last updated 1 May 2026</p>
+  <p class="meta">Forecourt &mdash; Last updated 5 May 2026</p>
 
   <p>Forecourt is a solo-developed app. This policy explains what data the app collects, why, and how it is handled.</p>
 
@@ -36,20 +37,26 @@
 
   <h2>What data is collected</h2>
 
-  <h2>Account information</h2>
+  <h3>Account information</h3>
   <p>When you sign in with Apple, I receive your name and an anonymous Apple ID. These are stored on the server to identify your account and personalise the app.</p>
 
-  <h2>Vehicle details</h2>
+  <h3>Vehicle details</h3>
   <p>Vehicles you add to the app — including make, model, year, fuel type, tank size, MPG, driving style, registration number, MOT expiry date, tax due date, colour, engine size, and CO2 emissions — are stored on the server linked to your account to power savings calculations, MOT reminders, and the garage screen.</p>
 
-  <h2>Fuel fill-up records</h2>
+  <h3>MOT history</h3>
+  <p>For Premium subscribers, MOT test history is fetched on demand from the DVSA trade API using your vehicle's registration number. Results are temporarily cached for up to 24 hours to reduce unnecessary API calls and are not stored permanently on the server.</p>
+
+  <h3>Fuel fill-up records</h3>
   <p>When you log a fill-up, the details (litres, price per litre, total cost, station, date, odometer reading, and calculated MPG) are stored on the server linked to your account to power fill-up history, monthly reports, and real-world MPG tracking.</p>
 
-  <h2>Location</h2>
+  <h3>Location</h3>
   <p>Your precise location is sent to the server when you search for nearby stations. It is used only to run the search query and is not stored or associated with your account.</p>
   <p>The station you fill up at is saved as part of your fill-up record, which indirectly links a location to your account.</p>
 
-  <h2>Push notification token</h2>
+  <h3>Subscription status</h3>
+  <p>If you subscribe to Forecourt Premium, a verification token issued by Apple is sent to the server to confirm your subscription status. No payment details are received or stored — all billing is handled entirely by Apple.</p>
+
+  <h3>Push notification token</h3>
   <p>If you allow notifications, your device token is sent to the server so that price alerts and monthly fuel reports can be delivered to your device. It is not used for advertising or tracking.</p>
 
   <hr>
